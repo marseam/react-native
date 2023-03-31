@@ -72,7 +72,7 @@ function triggerReleaseWorkflow(options) {
 async function main() {
   const branch = exitIfNotOnGit(
     () => getBranchName(),
-    "Not in git. You can't invoke bump-oss-versions.js from outside a git repo.",
+    "Not in git. You can't invoke bump-oss-versions.js from outside a git repo." ok,
   );
   const token = argv.token;
   const releaseVersion = argv.toVersion;
